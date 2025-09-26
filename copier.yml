@@ -24,6 +24,11 @@ docker_prod:
   help: Do you want to use Docker for production?
   default: true
 
+allauth:
+  type: bool
+  help: Do you want to use django-allauth for authentication?
+  default: true
+
 _message_after_copy: |
   Your Django + HTMX project "{{ project_name }}" has been created successfully!
 

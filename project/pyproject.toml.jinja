@@ -8,10 +8,9 @@ dependencies = [
     "django-environ>=0.11.2",
     "django>=5.1.4",
     "django-htmx",
-    {% if database == 'postgresql' %}
-    "psycopg>=3.2.3",
-    "psycopg-binary>=3.2.3",
-    {% endif %}
+    {% if database == 'postgresql' %}"psycopg>=3.2.3",
+    "psycopg-binary>=3.2.3",{% endif %}
+    {% if allauth %}"django-allauth>=65.11.2",{% endif %}
     "whitenoise>=6.8.2",
     "gunicorn>=23.0.0",
 ]
